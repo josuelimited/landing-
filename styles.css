@@ -1,136 +1,117 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f8fb; /* Un fondo gris claro */
-    color: #333; /* Color de texto principal */
-    line-height: 1.6;
-}
-
-header {
-    background-color: #fff;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #555;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #2980b9;
-}
-
-.signup-button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-.signup-button:hover {
-    background-color: #2980b9;
-}
-
-.hero {
-    padding: 80px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.hero-left {
-    flex: 1;
-    padding-right: 40px;
-}
-
-.hero-left h1 {
-    font-size: 3em;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-
-.hero-left p {
-    font-size: 1.1em;
-    color: #777;
-    margin-bottom: 30px;
-}
-
-.get-started-button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
-}
-
-.get-started-button:hover {
-    background-color: #2980b9;
-}
-
-.hero-right {
-    flex: 1;
-    position: relative;
-}
-
-.hero-right img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px; /* Opcional: para redondear las esquinas de la imagen */
-}
-
-.overlay-blue-1, .overlay-blue-2 {
-    position: absolute;
-    background-color: #87ceeb; /* Un azul claro */
-    opacity: 0.6;
-    border-radius: 5px;
-}
-
-.overlay-blue-1 {
-    width: 80%;
-    height: 70%;
-    top: 10%;
-    left: 10%;
-    z-index: -1; /* Para que quede detrás de la imagen */
-}
-
-.overlay-blue-2 {
-    width: 70%;
-    height: 80%;
-    top: 5%;
-    left: 15%;
-    z-index: -2; /* Para que quede detrás del otro overlay */
-}
+    font-family: sans-serif; /* Define la fuente tipográfica como una fuente sans-serif genérica */
+    margin: 0; /* Elimina cualquier margen predeterminado que el navegador pueda aplicar al cuerpo */
+    padding: 0; /* Elimina cualquier relleno predeterminado que el navegador pueda aplicar al cuerpo */
+    background-color: white; /* Establece el color de fondo del cuerpo en blanco */
+  }
+  
+  /* Estilos para el encabezado de la página */
+  header {
+    display: inline-block; /* Hace que el encabezado se comporte como un bloque en línea, permitiendo ajustar ancho y alto pero ocupando solo el espacio necesario horizontalmente */
+    height: 70px; /* Establece una altura fija de 70 píxeles para el encabezado */
+    align-items: center; /* Intenta alinear verticalmente los elementos dentro del encabezado (puede no tener efecto directo en elementos inline-block) */
+    width: 100%; /* Establece el ancho del encabezado al 100% de su contenedor padre */
+  }
+  
+  /* Estilos para un contenedor de división dentro del encabezado */
+  .division {
+    display: inline-block; /* Hace que la división se comporte como un bloque en línea */
+  }
+  
+  /* Estilos para la imagen dentro de la división */
+  .division img {
+    height: 50px; /* Establece una altura de 50 píxeles para la imagen */
+    margin-left: 200px; /* Añade un margen izquierdo de 200 píxeles a la imagen */
+    display: inline-block; /* Hace que la imagen se comporte como un bloque en línea */
+    vertical-align: middle; /* Alinea verticalmente la imagen al centro de su línea */
+    margin-top: 25px; /* Añade un margen superior de 25 píxeles a la imagen */
+  }
+  
+  /* Estilos para el nombre o título principal */
+  .name {
+    display: inline-block; /* Hace que el nombre se comporte como un bloque en línea */
+    vertical-align: middle; /* Alinea verticalmente el nombre al centro de su línea */
+    line-height: 5px; /* Establece una altura de línea muy pequeña para el nombre */
+    margin-top: 60px; /* Añade un margen superior de 60 píxeles al nombre */
+    margin-left: 2px; /* Añade un pequeño margen izquierdo de 2 píxeles al nombre */
+    font-size: 30px; /* Establece un tamaño de fuente de 30 píxeles para el nombre */
+  }
+  
+  /* Estilos para la sección de la derecha del encabezado (navegación) */
+  .derecha {
+    float: right; /* Alinea los elementos de la derecha hacia la derecha */
+    line-height: 80px; /* Establece una altura de línea de 80 píxeles para los elementos dentro de la derecha */
+    margin-top: 25px; /* Añade un margen superior de 25 píxeles a la sección de la derecha */
+    margin-right: 200px; /* Añade un margen derecho de 200 píxeles a la sección de la derecha */
+  }
+  
+  /* Estilos para los enlaces dentro de la sección de la derecha */
+  .derecha a {
+    float: left; /* Alinea los enlaces individualmente hacia la izquierda dentro de su contenedor (para que se dispongan horizontalmente) */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    padding-right: 2px; /* Añade un pequeño relleno derecho de 2 píxeles a los enlaces */
+    margin-right: 50px; /* Añade un margen derecho de 50 píxeles entre los enlaces */
+    font-family: Arial, Helvetica, sans-serif; /* Define la fuente tipográfica para los enlaces */
+    color: rgb(173, 173, 173); /* Establece el color del texto de los enlaces en un tono gris */
+    font-size: 20px; /* Establece un tamaño de fuente de 20 píxeles para los enlaces */
+    padding: 0; /* Elimina cualquier relleno predeterminado de los enlaces */
+    margin-top: 0; /* Elimina cualquier margen superior predeterminado de los enlaces */
+  }
+  
+  /* Estilos para un botón de navegación específico */
+  #boton-navegacion {
+    background-color: rgb(0, 153, 255); /* Establece un color de fondo azul para el botón */
+    display: block; /* Hace que el botón ocupe todo el ancho disponible y se comporte como un bloque */
+    color: white; /* Establece el color del texto del botón en blanco */
+    border-radius: 30px; /* Añade bordes redondeados al botón */
+    padding: 0.5px 20px; /* Añade un pequeño relleno vertical y un relleno horizontal de 20 píxeles al botón */
+  }
+  
+  /* CONTENIDO DE LA PÁGINA */
+  .relleno {
+    margin-left: 200px; /* Añade un margen izquierdo de 200 píxeles al contenido principal */
+    margin-top: 300px; /* Añade un margen superior de 300 píxeles al contenido principal */
+  }
+  
+  /* Estilos para el encabezado principal dentro del contenido */
+  .relleno h1 {
+    font-size: 50px; /* Establece un tamaño de fuente de 50 píxeles para el encabezado */
+    display: block; /* Hace que el encabezado ocupe todo el ancho disponible */
+    font-weight: bold; /* Establece el texto del encabezado en negrita */
+  }
+  
+  /* Estilos para un contenedor de texto */
+  .texto {
+    margin-top: -20px; /* Añade un margen superior negativo de 20 píxeles al texto (para acercarlo al encabezado) */
+  }
+  
+  /* Estilos para el contenedor principal del contenido */
+  .Contenido p {
+    font-family: sans-serif; /* Define la fuente tipográfica para los párrafos dentro del contenido */
+    font-size: 20px; /* Establece un tamaño de fuente de 20 píxeles para los párrafos */
+    color: rgb(173, 173, 173); /* Establece el color del texto de los párrafos en un tono gris */
+  }
+  
+  /* Estilos para un párrafo específico */
+  .parrafo {
+    margin-bottom: 60px; /* Añade un margen inferior de 60 píxeles al párrafo */
+  }
+  
+  /* Estilos para un enlace de inicio */
+  .boton-start {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-family: sans-serif; /* Define la fuente tipográfica para el enlace */
+    color: white; /* Establece el color del texto del enlace en blanco */
+    background-color: rgb(118, 200, 252); /* Establece un color de fondo azul claro para el enlace */
+    line-height: 20px; /* Establece una altura de línea de 20 píxeles para el enlace */
+    padding: 15px 30px; /* Añade un relleno vertical de 15 píxeles y un relleno horizontal de 30 píxeles al enlace */
+    border-radius: 15px; /* Añade bordes redondeados al enlace */
+  }
+  
+  /* Estilos para un contenedor de imagen */
+  div .imagen {
+    height: 600px; /* Establece una altura de 600 píxeles para la imagen */
+    float: right; /* Alinea la imagen hacia la derecha */
+    margin-top: -420px; /* Añade un margen superior negativo de 420 píxeles a la imagen (para subirla y superponerla) */
+    margin-right: 150px; /* Añade un margen derecho de 150 píxeles a la imagen */
+  }
